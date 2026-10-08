@@ -526,5 +526,20 @@
       });
     });
   </script>
+
+  <!-- Google Ads - conversao MULTIPROPRIEDADE no clique do WhatsApp (AW-18484766738) -->
+  <script>
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href*="wa.me"]');
+      if (link && typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18484766738/ngAlCJGn_JUdEJLQnO5E',
+          'value': 1.0,
+          'currency': 'BRL',
+          'transport_type': 'beacon'
+        });
+      }
+    });
+  </script>
 </body>
 </html>
